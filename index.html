@@ -39,15 +39,15 @@
 <script type="text/javascript">
 
 	
-	var sudoeste = L.latLng(31, -29),
-			nordeste = L.latLng(44, -5),
+	var sudoeste = L.latLng(25, -29),
+			nordeste = L.latLng(44, 0),
 			extensao = L.latLngBounds(sudoeste, nordeste);
 	
 	var map = L.map('map', {
 			center: [37.6, -5],
-			zoom:8,
+			zoom:5,
 			maxZoom: 10,
-			minZoom: 6,
+			minZoom: 5,
 			maxBounds: extensao,
 		});
 			
