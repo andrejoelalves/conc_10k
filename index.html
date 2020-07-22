@@ -138,7 +138,7 @@
 		onEachFeature: onEachFeature
 	}).addTo(map);
 
-	map.attributionControl.addAttribution('<b>FONTES DOS DADOS: Número de casos: <a href="https://covid19.min-saude.pt/relatorio-de-situacao/">Direção-Geral de Saúde</a> | População: <a href:"https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0008273&xlang=pt">Instituto Nacional de Estatística</a> <b>');
+	map.attributionControl.addAttribution('');
 
 
 	var legend = L.control({position: 'bottomright'});
@@ -155,7 +155,7 @@
 		for (var i = 0; i < grades.length; i++) {
                   div.innerHTML +=
                   '<i style="background:' + getColor(grades[i] + 1) + '"></i>' +'[ ' +
-                  grades[i] + (grades[i + 1] ? ' a ' + grades[i + 1] +' [' + '<br>' : ' a 121 ] &emsp; &emsp; Fontes de dados: <a href="https://covid19.min-saude.pt/relatorio-de-situacao/">DGS</a> | <a href="https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0008273&xlang=pt">INE</a>'  )
+                  grades[i] + (grades[i + 1] ? ' a ' + grades[i + 1] +' [' + '<br>' : ' a 121 ] &emsp; &emsp; Fontes de dados: <a href="https://covid19.min-saude.pt/relatorio-de-situacao/" target="_blank">DGS</a> | <a href="https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0008273&xlang=pt" target="_blank">INE</a>'  )
 		}
 		return div;
 	};
