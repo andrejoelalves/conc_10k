@@ -46,7 +46,7 @@
 	var map = L.map('map', {
 			center: [37.6, -15],
 			zoom:5,
-			maxZoom: 10,
+			maxZoom: 12,
 			minZoom: 5,
 			maxBounds: extensao,
 		});
@@ -133,7 +133,7 @@
 		});
 	}
 
-	geojson = L.geoJson(dados, {
+	geojson = L.geoJson(x, {
 		style: style,
 		onEachFeature: onEachFeature
 	}).addTo(map);
