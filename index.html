@@ -236,12 +236,12 @@ L.Control.zoomHome = L.Control.extend({
 			labels = [],
 			from, to;
 			
-		div.innerHTML = '<FONT SIZE=2><b>Casos confirmados por 10 mil habitantes</b><br><FONT SIZE="1">21 de julho de 2020</FONT></br> '; // Títulos da legenda	
+		div.innerHTML = '<FONT SIZE=2><b>Casos confirmados <br> por 10 mil habitantes</b><br><FONT SIZE="1">21 de julho de 2020</FONT></br> '; // Títulos da legenda	
 
 		for (var i = 0; i < grades.length; i++) {
                   div.innerHTML +=
                   '<i style="background:' + getColor(grades[i] + 1) + '"></i>' +'[ ' +
-                  grades[i] + (grades[i + 1] ? ' a ' + grades[i + 1] +' [' + '<br>' : ' a 121 ] &emsp; &emsp; &emsp; <FONT SIZE=1>Fontes de dados: <a href="https://covid19.min-saude.pt/relatorio-de-situacao/" target="_blank">DGS</a> | <a href="https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0008273&xlang=pt" target="_blank">INE</a></font>'  )
+                  grades[i] + (grades[i + 1] ? ' a ' + grades[i + 1] +' [' + '<br>' : ' a 121 ] <br> <FONT SIZE=1>Fontes de dados: <a href="https://covid19.min-saude.pt/relatorio-de-situacao/" target="_blank">DGS</a> | <a href="https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0008273&xlang=pt" target="_blank">INE</a></font>'  )
 		}
 		return div;
 	};
