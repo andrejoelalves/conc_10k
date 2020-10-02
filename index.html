@@ -368,8 +368,8 @@
             + props.Concelho + '</b><br />' + '<div ALIGN="CENTER">'
             + '<p span style = "font-weight:bold; color: #c62121"</p>'
             + String(props[globalTimestamp])
-            + '<span style="font-weight:normal; color:black"</span> cases per 10 thousand inhabitants</font>'
-            + '</b><br />' : 'Select a municipality');
+            + '<span style="font-weight:normal; color:black"</span> casos por 10 mil habitantes</font>'
+            + '</b><br />' : 'Selecione um município');
 
     };
 
@@ -398,7 +398,7 @@
 
         cities = L.geoJson(data, {
             style: {
-                weight: 0.3,
+                weight: 0.5,
                 opacity: 1,
                 color: 'white',
                 dashArray: '1',
@@ -423,7 +423,7 @@
                     info.update();
                     this.setStyle({
                         'color': 'white',
-                        weight: 0.3,
+                        weight: 0.5,
                         opacity: 1,
                         dashArray: '1',
                         fillOpacity: 1.0,
@@ -453,7 +453,7 @@
                 from, to;
 
 
-            div.innerHTML = '<FONT SIZE=2 style = "font-family:verdana"><b>Confirmed cases per 10 <br> thousand inhabitants</b><span>  <span class="brsmall"></span> '; // Títulos da legenda
+            div.innerHTML = '<FONT SIZE=2 style = "font-family:verdana"><b>Casos confirmados <br> por 10 mil habitantes</b><span>  <span class="brsmall"></span> '; // Títulos da legenda
 
             for (var i = 0; i < grades.length; i++) {
                 div.innerHTML +=
@@ -461,7 +461,7 @@
                     labels[i] + (grades[i + 1] ? '  '
                     + '<br>' : ' <br> <span SIZE=1>' +
                     '<span style = "font-weight:normal; style = "font-family:verdana"; color:black"</span>' +
-                    '<FONT SIZE=1 style = "font-family:verdana">Data sources: <a href="https://covid19.min-saude.pt/relatorio-de-situacao/" target="_blank">DGS</a>' +
+                    '<FONT SIZE=1 style = "font-family:verdana">Fontes dos dados: <a href="https://covid19.min-saude.pt/relatorio-de-situacao/" target="_blank">DGS</a>' +
                     ' | <a href="https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_indicadores&indOcorrCod=0008273&xlang=pt" ' +
                     'target="_blank">INE</a></span>')
 					
